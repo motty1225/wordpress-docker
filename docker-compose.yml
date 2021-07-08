@@ -19,7 +19,7 @@ services:
     ports:
       - '80:80'
     volumes:
-      - ./theme-original:/var/www/html/wp-content/themes/theme-original
+      - ./${WORDPEWSS_THEME_NAME}:/var/www/html/wp-content/themes/${WORDPEWSS_THEME_NAME}
       - ./conf.d/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
 
     restart: always
